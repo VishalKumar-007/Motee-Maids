@@ -40,5 +40,7 @@
     // SignUp Activity Strings
 
     <string name="otp_verification">OTP Verification</string>
+    <string name="bridal">Bridal</string>
+    <string name="search"><font size="15">Search</font></string>
 
 </resources>

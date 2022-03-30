@@ -1,17 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Welcome to the Login Screen"
-        android:textSize="25dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/imgMoteeMaids"
+            android:layout_width="260dp"
+            android:layout_height="185dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginTop="12dp"
+            android:layout_centerHorizontal="true"/>
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/txtRetailerLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/retailer_login"
+            android:layout_below="@+id/imgMoteeMaids"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdCredentials"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/txtRetailerLogin"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtPartnerID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/partner_id"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/etEnterPartnerID"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_partner_id"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"/>
+
+                <TextView
+                    android:id="@+id/txtPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/password"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/etEnterPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_password"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cdCredentials"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/register"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cdCredentials"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:layout_marginHorizontal="27dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_below="@id/txtRegister"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="25dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>

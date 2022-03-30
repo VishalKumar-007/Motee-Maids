@@ -10,11 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Motee_Maids">
         <activity
+            android:name=".VerifyOtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
             android:name=".ForgotPasswordActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".LoginActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">

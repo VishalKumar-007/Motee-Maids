@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back_arrow" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/back"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGetStartedWithYourAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/get_started_with_your_account"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_name"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/email_2"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_email"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    android:id="@+id/txtPanCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/pan_card"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterPanCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_pan_card"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/txtLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/location"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_location"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtFullAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/full_address"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterFullAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_full_address"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="textPostalAddress"/>
+
+                <TextView
+                    android:id="@+id/txtZipCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/zip_code"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterZipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_zip_code"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/txtMobileNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/mobile_number"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterMobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_mobile_number"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:id="@+id/txtFacebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/facebook"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/etEnterFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:hint="@string/enter_facebook"
+                    android:textColorHint="@color/grey"
+                    android:layout_marginHorizontal="17dp"
+                    android:background="@drawable/edittext_border"
+                    android:paddingHorizontal="10dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="15dp"
+                    android:inputType="text"/>
+
+                <TextView
+                    android:id="@+id/txtGovtDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/govt_document"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btnGovtDocument"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="@string/choose_here"
+                    android:layout_marginStart="22dp"
+                    android:textColor="@color/black"
+                    android:backgroundTint="#dedede"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="25dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnGetStarted"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/get_started"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="22dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

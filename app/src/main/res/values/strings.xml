@@ -9,8 +9,36 @@
     <string name="enter_partner_id"><font size="16">Enter Partner ID</font></string>
     <string name="enter_password"><font size="16">Enter Password</font></string>
     <string name="email">Email:</string>
-    <string name="enter_email"><font size="16">Enter Email</font></string>
     <string name="submit">Submit</string>
     <string name="back">Back</string>
     <string name="forgot_password_1">Forgot Password</string>
+
+    // SignUp Activity Strings
+    <string name="get_started_with_your_account">Get Started with your account</string>
+    // Textviews
+    <string name="name">Name</string>
+    <string name="email_2">Email</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="location">Location</string>
+    <string name="full_address">Full Address</string>
+    <string name="zip_code">Zip Code</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="facebook">Facebook</string>
+    <string name="govt_document">Govt. Document</string>
+    // Edittexts
+    <string name="enter_name"><font size="16">Enter Name</font></string>
+    <string name="enter_email"><font size="16">Enter Email</font></string>
+    <string name="enter_pan_card"><font size="16">Enter Pan Card</font></string>
+    <string name="enter_location"><font size="16">Enter Location</font></string>
+    <string name="enter_full_address"><font size="16">Enter Full Address</font></string>
+    <string name="enter_zip_code"><font size="16">Enter Zip Code</font></string>
+    <string name="enter_mobile_number"><font size="16">Enter Mobile Number</font></string>
+    <string name="enter_facebook"><font size="16">Enter Facebook</font></string>
+    // Buttons
+    <string name="choose_here"><font size="10">CHOOSE HERE</font></string>
+    <string name="get_started">Get Started</string>
+    // SignUp Activity Strings
+
+    <string name="otp_verification">OTP Verification</string>
+
 </resources>

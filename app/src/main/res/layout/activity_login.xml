@@ -63,7 +63,8 @@
                     android:textColorHint="@color/grey"
                     android:layout_marginHorizontal="10dp"
                     android:background="@drawable/edittext_border"
-                    android:paddingHorizontal="10dp"/>
+                    android:paddingHorizontal="10dp"
+                    android:inputType="number"/>
 
                 <TextView
                     android:id="@+id/txtPassword"
@@ -84,7 +85,8 @@
                     android:textColorHint="@color/grey"
                     android:layout_marginHorizontal="10dp"
                     android:background="@drawable/edittext_border"
-                    android:paddingHorizontal="10dp"/>
+                    android:paddingHorizontal="10dp"
+                    android:inputType="textPassword"/>
 
             </LinearLayout>
 
@@ -99,7 +101,7 @@
             android:layout_marginTop="8dp"
             android:text="@string/register"
             android:textColor="@color/black"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtForgotPassword"

@@ -8,4 +8,9 @@
     <string name="password">Password</string>
     <string name="enter_partner_id"><font size="16">Enter Partner ID</font></string>
     <string name="enter_password"><font size="16">Enter Password</font></string>
+    <string name="email">Email:</string>
+    <string name="enter_email"><font size="16">Enter Email</font></string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="forgot_password_1">Forgot Password</string>
 </resources>

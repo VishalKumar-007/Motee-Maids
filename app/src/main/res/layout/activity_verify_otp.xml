@@ -47,28 +47,129 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cdOTP"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginHorizontal="10dp"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp"
-        android:layout_centerInParent="true">
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cdOTP"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginHorizontal="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="5dp">
 
-    </androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/txtVerifyYourEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_your_email"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
 
-    <Button
-        android:id="@+id/btnConfirmOtp"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:text="Confirm OTP"
-        android:layout_below="@id/cdOTP"
-        android:layout_marginHorizontal="15dp"
-        android:background="@drawable/rounded_corner"
-        android:layout_marginTop="55dp"
-        android:backgroundTint="@color/colorPrimary"/>
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:itemCount="6"
+                android:layout_gravity="center"
+                android:inputType="number"
+                android:elevation="10dp"
+                android:textColor="@color/black"
+                app:itemWidth="40dp"
+                app:itemHeight="40dp"
+                app:itemRadius="10dp"
+                app:itemSpacing="8dp"
+                app:viewType="rectangle"
+                style="@style/PinWidget.PinView"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resend_otp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="12dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnConfirmOtp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/confirm_otp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_marginTop="55dp"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cdOTP"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginHorizontal="10dp"-->
+<!--        app:cardCornerRadius="10dp"-->
+<!--        app:cardElevation="5dp"-->
+<!--        android:layout_centerInParent="true">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/txtVerifyYourEmail"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/verify_your_email"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_marginTop="15dp"/>-->
+
+<!--        <com.chaos.view.PinView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="43dp"-->
+<!--            app:itemCount="6"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:inputType="number"-->
+<!--            android:elevation="10dp"-->
+<!--            android:textColor="@color/black"-->
+<!--            app:itemWidth="40dp"-->
+<!--            app:itemHeight="43dp"-->
+<!--            app:itemRadius="10dp"-->
+<!--            app:itemSpacing="8dp"-->
+<!--            app:viewType="rectangle"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/resend_otp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginBottom="12dp"/>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnConfirmOtp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:text="@string/confirm_otp"-->
+<!--        android:layout_marginHorizontal="15dp"-->
+<!--        android:background="@drawable/rounded_corner"-->
+<!--        android:layout_marginTop="55dp"-->
+<!--        android:layout_below="@+id/cdOTP"-->
+<!--        android:backgroundTint="@color/colorPrimary"/>-->
 
 </RelativeLayout>

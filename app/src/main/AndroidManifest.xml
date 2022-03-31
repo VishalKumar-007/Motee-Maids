@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Motee_Maids">
         <activity
             android:name=".HomeActivity"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".VerifyOtpActivity"
             android:exported="false"

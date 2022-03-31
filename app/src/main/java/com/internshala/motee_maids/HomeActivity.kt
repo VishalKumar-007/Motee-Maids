@@ -38,7 +38,6 @@ class HomeActivity : AppCompatActivity() {
         val data7 = ModelClass("Babydoll dress", "Price - \$ 400", R.drawable.recycler_img_1)
         val data8 = ModelClass("Wrap around dress", "Price - \$ 450", R.drawable.recycler_img_2)
         val data9 = ModelClass("Kimono dress", "Price - \$ 500", R.drawable.recycler_img_3)
-        val data10 = ModelClass("Bubble dress", "Price - \$ 550", R.drawable.recycler_img_1)
 
         // Adding data in itemList
         itemList.add(data1)
@@ -50,7 +49,6 @@ class HomeActivity : AppCompatActivity() {
         itemList.add(data7)
         itemList.add(data8)
         itemList.add(data9)
-        itemList.add(data10)
 
 
 

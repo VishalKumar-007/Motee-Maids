@@ -19,10 +19,9 @@
         <ImageView
             android:id="@+id/itemImage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="170dp"
             android:layout_weight="5"
             android:layout_margin="9dp"
-            android:background="@color/colorPrimary"
             android:src="@drawable/ic_default_image"/>
 
         <TextView

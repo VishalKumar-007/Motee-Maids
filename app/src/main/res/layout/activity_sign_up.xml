@@ -22,18 +22,40 @@
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/white">
 
-                <ImageView
+                <LinearLayout
+                    android:id="@+id/backButtonSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_back_arrow" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="@string/back"
-                    android:textColor="@color/black"
-                    android:textSize="14sp" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_back_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/back"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:paddingStart="5dp"/>
+
+                </LinearLayout>
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:src="@drawable/ic_back_arrow" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_vertical"-->
+<!--                    android:text="@string/back"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="14sp" />-->
 
             </androidx.appcompat.widget.Toolbar>
 

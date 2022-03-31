@@ -154,14 +154,14 @@
                     android:id="@+id/etEnterLocation"
                     android:layout_width="match_parent"
                     android:layout_height="37dp"
-                    android:hint="@string/enter_location"
-                    android:textColorHint="@color/grey"
                     android:layout_marginHorizontal="17dp"
-                    android:background="@drawable/edittext_border"
-                    android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="text"/>
+                    android:background="@drawable/edittext_border"
+                    android:hint="@string/enter_location"
+                    android:inputType="text"
+                    android:paddingHorizontal="10dp"
+                    android:textColorHint="@color/grey" />
 
                 <TextView
                     android:id="@+id/txtFullAddress"
@@ -222,18 +222,52 @@
                     android:layout_marginStart="22dp"
                     android:textColor="@color/black" />
 
-                <EditText
-                    android:id="@+id/etEnterMobileNumber"
+                <LinearLayout
+                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="37dp"
-                    android:hint="@string/enter_mobile_number"
-                    android:textColorHint="@color/grey"
-                    android:layout_marginHorizontal="17dp"
-                    android:background="@drawable/edittext_border"
-                    android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="number"/>
+                    android:background="@drawable/edittext_border"
+                    android:weightSum="10">
+
+                    <com.hbb20.CountryCodePicker
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        app:ccp_textSize="15dp"
+                        android:paddingEnd="0dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <EditText
+                        android:layout_weight="9"
+                        android:id="@+id/etEnterMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="@string/enter_mobile_number"
+                        android:textColorHint="@color/grey"
+                        android:background="@null"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:inputType="number"/>
+
+                </LinearLayout>
+
+
+<!--                <EditText-->
+<!--                    android:id="@+id/etEnterMobileNumber"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="37dp"-->
+<!--                    android:hint="@string/enter_mobile_number"-->
+<!--                    android:textColorHint="@color/grey"-->
+<!--                    android:layout_marginHorizontal="17dp"-->
+<!--                    android:background="@drawable/edittext_border"-->
+<!--                    android:paddingHorizontal="10dp"-->
+<!--                    android:layout_marginStart="22dp"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:inputType="number"/>-->
 
                 <TextView
                     android:id="@+id/txtFacebook"

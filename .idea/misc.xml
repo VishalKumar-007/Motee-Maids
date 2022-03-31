@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/drawable/edittext_border.xml" value="0.1675" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/drawable/ic_circle_img.xml" value="0.1235" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/drawable/ic_search.xml" value="0.1375" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/drawable/rounded_corner.xml" value="0.1385" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/layout/activity_forgot_password.xml" value="0.176" />
@@ -13,12 +14,7 @@
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/layout/activity_sign_up.xml" value="0.16052631578947368" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/layout/activity_splash_screen.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/layout/activity_verify_otp.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_home.xml" value="0.17844202898550723" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17844202898550723" />
-        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.17844202898550723" />
-        <entry key="app/src/main/res/layout/activity_verify_otp.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/LENOVO/AndroidStudioProjects/Motee_Maids/app/src/main/res/layout/recycler_layout.xml" value="0.16052631578947368" />
       </map>
     </option>
   </component>

@@ -45,5 +45,7 @@
     <string name="verify_your_email">Verify Your Email</string>
     <string name="resend_otp">Resend OTP</string>
     <string name="confirm_otp">Confirm OTP</string>
+    <string name="default_text">Default Text</string>
+    <string name="default_price">Default Price</string>
 
 </resources>

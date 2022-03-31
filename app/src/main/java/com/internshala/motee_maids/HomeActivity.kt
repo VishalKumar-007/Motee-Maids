@@ -2,7 +2,6 @@ package com.internshala.motee_maids
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Adapter
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
@@ -15,7 +14,7 @@ class HomeActivity : AppCompatActivity() {
     lateinit var imgHamburger: ImageView
     lateinit var imgFilter: ImageView
 
-    // intializing all variaables
+    // Intializing all variables
     lateinit var recyclerView: RecyclerView
     lateinit var adapter: MyAdapter
     val itemList :ArrayList<ModelClass> = ArrayList()
@@ -29,20 +28,19 @@ class HomeActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recyclerView)
 
 
-        // added data in data model
-        val data1 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data2 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data3 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data4 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data5 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data6 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data7 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data8 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data9 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
-        val data10 = ModelClass("hajsdajd", "45412", R.drawable.app_logo)
+        // Adding data in data model
+        val data1 = ModelClass("Culotte dress", "Price - \$ 100", R.drawable.recycler_img_1)
+        val data2 = ModelClass("Babydoll dress", "Price - \$ 150", R.drawable.recycler_img_2)
+        val data3 = ModelClass("Wrap around dress", "Price - \$ 200", R.drawable.recycler_img_3)
+        val data4 = ModelClass("Kimono dress", "Price - \$ 250", R.drawable.recycler_img_1)
+        val data5 = ModelClass("Bubble dress", "Price - \$ 300", R.drawable.recycler_img_2)
+        val data6 = ModelClass("Culotte dress", "Price - \$ 350", R.drawable.recycler_img_3)
+        val data7 = ModelClass("Babydoll dress", "Price - \$ 400", R.drawable.recycler_img_1)
+        val data8 = ModelClass("Wrap around dress", "Price - \$ 450", R.drawable.recycler_img_2)
+        val data9 = ModelClass("Kimono dress", "Price - \$ 500", R.drawable.recycler_img_3)
+        val data10 = ModelClass("Bubble dress", "Price - \$ 550", R.drawable.recycler_img_1)
 
-
-        // add data in itemList
+        // Adding data in itemList
         itemList.add(data1)
         itemList.add(data2)
         itemList.add(data3)
@@ -57,7 +55,7 @@ class HomeActivity : AppCompatActivity() {
 
 
 
-        // recycler view attach with adapter files
+        // Attaching recyclerView with adapter files
         recyclerView.layoutManager = GridLayoutManager(this, 2)
         adapter = MyAdapter(this, itemList)
         recyclerView.adapter = adapter

@@ -18,6 +18,7 @@
             android:background="@color/white">
 
             <ImageView
+                android:id="@+id/imgHamburger"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:src="@drawable/hamburger_icon" />
@@ -32,6 +33,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/imgFilter"
                 android:layout_width="30dp"
                 android:layout_height="25dp"
                 android:src="@drawable/ic_filter"

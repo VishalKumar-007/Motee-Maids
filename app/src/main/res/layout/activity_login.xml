@@ -64,7 +64,8 @@
                     android:layout_marginHorizontal="10dp"
                     android:background="@drawable/edittext_border"
                     android:paddingHorizontal="10dp"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:maxLength="8"/>
 
                 <TextView
                     android:id="@+id/txtPassword"
@@ -86,7 +87,8 @@
                     android:layout_marginHorizontal="10dp"
                     android:background="@drawable/edittext_border"
                     android:paddingHorizontal="10dp"
-                    android:inputType="textPassword"/>
+                    android:inputType="textPassword"
+                    android:maxLength="16" />
 
             </LinearLayout>
 

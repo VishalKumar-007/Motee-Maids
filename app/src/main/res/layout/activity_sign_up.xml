@@ -98,7 +98,8 @@
                     android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="text"/>
+                    android:inputType="text"
+                    android:maxLength="30"/>
 
                 <TextView
                     android:id="@+id/txtEmail"
@@ -122,7 +123,8 @@
                     android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="textEmailAddress"/>
+                    android:inputType="textEmailAddress"
+                    android:maxLength="80"/>
 
                 <TextView
                     android:id="@+id/txtPanCard"
@@ -146,7 +148,8 @@
                     android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="number"/>
+                    android:inputType="text"
+                    android:maxLength="10"/>
 
                 <TextView
                     android:id="@+id/txtLocation"
@@ -218,7 +221,8 @@
                     android:paddingHorizontal="10dp"
                     android:layout_marginStart="22dp"
                     android:layout_marginEnd="15dp"
-                    android:inputType="number"/>
+                    android:inputType="number"
+                    android:maxLength="7"/>
 
                 <TextView
                     android:id="@+id/txtMobileNumber"
@@ -260,7 +264,8 @@
                         android:paddingStart="0dp"
                         android:paddingEnd="5dp"
                         android:layout_marginEnd="15dp"
-                        android:inputType="number"/>
+                        android:inputType="number"
+                        android:maxLength="10"/>
 
                 </LinearLayout>
 

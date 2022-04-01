@@ -25,12 +25,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
 
         btnSubmit.setOnClickListener {
 
-            val email = etEnterEmail2.text.toString()
+            val email2 = etEnterEmail2.text.toString()
 
-            if (email.isEmpty()) {
+            if (email2.isEmpty()) {
                 etEnterEmail2.setError("This field cannot be empty")
             }
-            else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            else if (!Patterns.EMAIL_ADDRESS.matcher(email2).matches()){
                 etEnterEmail2.setError("Please enter a valid email address")
             }
             else {

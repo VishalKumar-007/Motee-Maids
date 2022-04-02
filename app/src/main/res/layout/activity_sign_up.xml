@@ -305,16 +305,31 @@
                     android:layout_marginStart="22dp"
                     android:textColor="@color/black" />
 
-                <Button
-                    android:id="@+id/btnChooseHere"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:id="@+id/btnPlusText"
+                    android:layout_width="match_parent"
                     android:layout_height="45dp"
-                    android:text="@string/choose_here"
                     android:layout_marginStart="22dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="#dedede"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="25dp"/>
+                    android:layout_marginEnd="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="25dp">
+
+                    <Button
+                        android:id="@+id/btnChooseHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:text="@string/choose_here"
+                        android:textColor="@color/black"
+                        android:backgroundTint="#dedede"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/txtfileChosen"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 

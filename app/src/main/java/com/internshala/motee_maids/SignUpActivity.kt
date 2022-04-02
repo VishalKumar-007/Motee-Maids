@@ -1,12 +1,17 @@
 package com.internshala.motee_maids
 
+import android.app.Activity
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.DocumentsContract
 import android.util.Patterns
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
+import android.widget.TextView
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -18,6 +23,7 @@ class SignUpActivity : AppCompatActivity() {
     lateinit var etEnterPanCard: EditText
     lateinit var etEnterZipCode: EditText
     lateinit var etEnterMobileNumber: EditText
+    lateinit var txtFileChosen: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +37,7 @@ class SignUpActivity : AppCompatActivity() {
         etEnterPanCard = findViewById(R.id.etEnterPanCard)
         etEnterZipCode = findViewById(R.id.etEnterZipCode)
         etEnterMobileNumber = findViewById(R.id.etEnterMobileNumber)
+        txtFileChosen = findViewById(R.id.txtfileChosen)
 
         backButtonSignUp.setOnClickListener {
             onBackPressed()
@@ -82,12 +89,50 @@ class SignUpActivity : AppCompatActivity() {
         }
 
         btnChooseHere.setOnClickListener {
-
             val intent = Intent()
                 .setType("*/*")
                 .setAction(Intent.ACTION_GET_CONTENT)
             startActivityForResult(Intent.createChooser(intent, "Select a file"), 111)
         }
 
+        // Getting file name from file picker
+//        val PICK_PDF_FILE = 2
+//        fun openFile(pickerInitialUri: Uri) {
+//            val intent = Intent(Intent.ACTION_OPEN_DOCUMENT).apply {
+//                addCategory(Intent.CATEGORY_OPENABLE)
+//                type = "application/pdf"
+//
+//                // Optionally, specify a URI for the file that should appear in the
+//                // system file picker when it loads.
+//                putExtra(DocumentsContract.EXTRA_INITIAL_URI, pickerInitialUri)
+//            }
+//
+//            startActivityForResult(intent, PICK_PDF_FILE)
+//        }
+//
+//        fun openDirectory(pickerInitialUri: Uri) {
+//            // Choose a directory using the system's file picker.
+//            val intent = Intent(Intent.ACTION_OPEN_DOCUMENT_TREE).apply {
+//                // Optionally, specify a URI for the directory that should be opened in
+//                // the system file picker when it loads.
+//                putExtra(DocumentsContract.EXTRA_INITIAL_URI, pickerInitialUri)
+//            }
+//
+//            startActivityForResult(intent, 111)
+//        }
+//
+//        fun onActivityResult(
+//            requestCode: Int, resultCode: Int, resultData: Intent?) {
+//            if (requestCode == 111
+//                && resultCode == Activity.RESULT_OK) {
+//                // The result data contains a URI for the document or directory that
+//                // the user selected.
+//                resultData?.data?.also { uri ->
+//                    txtFileChosen.setText(getString(R.string.app_name))
+//                }
+//            }
+//        }
+
     }
+
 }

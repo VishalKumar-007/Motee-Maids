@@ -72,7 +72,7 @@ class SignUpActivity : AppCompatActivity() {
                 etEnterMobileNumber.setError("This field cannot be empty")
             }
             else if (enteredMobileNumber.length < 10) {
-                etEnterMobileNumber.setError("This field should contain at least 10 digits")
+                etEnterMobileNumber.setError("This field should contain 10 digits")
             }
             else {
                 val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
